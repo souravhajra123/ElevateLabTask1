@@ -6,6 +6,9 @@
 # 3. Update the machine
 ```bash
 sudo apt-get update
+```
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/78b02af26f3f619c0e4483d1dfd6efadadc72db7/images/2.JPG)
+
 
 
 # My Node App
