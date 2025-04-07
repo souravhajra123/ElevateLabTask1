@@ -114,7 +114,7 @@ docker run -dit -p 3000:3000 --name <container_name> <image_name>
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/5f231d991817a426e8b3f915e1667b28861cb622/images/14.JPG)
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/5f231d991817a426e8b3f915e1667b28861cb622/images/15.JPG)
 
-# 14. Remove docker container and docker image from the base, because now we will automate the workflow
+# 14. Remove docker container and docker image from the base machine, because now we will automate the workflow
 ```bash
 docker stop <container_id>
 docker rm <container_id>
