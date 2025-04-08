@@ -3,7 +3,7 @@ name: Deploy Node App to DockerHub
 on:
   push:
     branches:
-      - main  # Trigger on push to main
+      - main1  # Trigger on push to main
 
 jobs:
   build-and-deploy:
