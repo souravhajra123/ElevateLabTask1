@@ -128,7 +128,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 # 12. Build the Jenkins job manually by clicking on "Build Now"
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/20.JPG)
 
-# 13. After successfull build, you check docker image and container on the terminal
+# 13. After successfull build, you can check docker image and container on the terminal
 ```bash
 docker images # to list images
 docker ps # to list running containers
