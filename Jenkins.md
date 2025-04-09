@@ -179,18 +179,3 @@ docker rmi <image_ID>
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/39.JPG)
 
 ## THANK YOU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
