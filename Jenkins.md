@@ -122,16 +122,63 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/4069f2f7b345603fedbc8be692ee65c03cb1e923/Jenkins_images/17.JPG)
 ![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/4069f2f7b345603fedbc8be692ee65c03cb1e923/Jenkins_images/18.JPG)
 
-# 11. 
+# 11. Add Docker Hub credentials in Jenkins store's Global credentials
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/19.JPG)
 
+# 12. Build the Jenkins job manually by clicking on "Build Now"
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/20.JPG)
 
+# 13. After successfull build, you check docker image and container on the terminal
+```bash
+docker images # to list images
+docker ps # to list running containers
+```
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/21.JPG)
 
+# 14. Check Docker Hub repository
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/22.JPG)
 
+# 15. Browse base machine's public IP on port 3000 to see the container's output
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/23.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/24.JPG)
 
+# 16. Clean the base machine before automatic build(optional)
+```bash
+docker stop <container_ID>
+docker rm <container_ID>
+docker rmi <image_ID>
+```
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/25.JPG)
 
+# 17. Add GitHub Webhook in the GitHub repository for auto trigger
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/26.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/27.JPG)
 
+# 18. Create a readme file in your local repository, and add, commit and push it to remote/GitHub repository to trigger the Pipeline with new commit automatically
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/28.JPG)
 
+# 19. Jenkins Pipeline got triggered automatically after the new push to GitHub repository
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/29.JPG)
 
+# 20. After successful build, check docker image and container and browse base machine on port 3000 to see the output
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/30.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/31.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/32.JPG)
+
+# 21. Now we will add Jenkinsfile to remote/GitHub repository and make some changes in Jenkins Pipeline job so that it can fetch Jenkinsfile from GitHub repository only
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/33.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/34.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/35.JPG)
+
+# 22. Now make some changes on readme file and push it to GitHub repository, after the push Jenkins Pipeline will be triggered automatically and build the job as defined in Jenkinsfile of GitHub repository
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/36.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/37.JPG)
+
+# 23. After successful build, check docker image and container and browse base machine on port 3000 to see the output
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/38.JPG)
+![image alt](https://github.com/souravhajra123/ElevateLabTask1/blob/1e1e6eb8c972d26feb7def40ee5465ced0a2dcf6/Jenkins_images/39.JPG)
+
+## THANK YOU
 
 
 
